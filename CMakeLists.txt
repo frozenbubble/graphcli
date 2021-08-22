@@ -8,13 +8,11 @@ include(FetchContent)
 FetchContent_Declare(
     graphbuilder
     GIT_REPOSITORY https://github.com/frozenbubble/graphbuilder.git
-    GIT_TAG 0.0.2
+    GIT_TAG 0.0.3
 )
 
 FetchContent_MakeAvailable(graphbuilder)
-# find_package(graphbuilder REQUIRED)
 
 add_executable(graphcli main.cc)
 target_link_libraries(graphcli graphbuilder)
 target_include_directories(graphcli PRIVATE build/_deps/graphbuilder-src)
-# include(graphbuilder)

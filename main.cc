@@ -18,7 +18,7 @@ void printParallelBatches(Graph& g)
     std::cout << std::endl << "Batches: " << std::endl;
     int batchNumber = 1;
     auto batches = g.getParallelBatches();
-    for (auto&& batch : *batches)
+    for (auto&& batch : batches)
     {
         std::cout << "Batch " << batchNumber << ": ";
         for (int node : batch)

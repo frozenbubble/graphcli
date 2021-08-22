@@ -8,7 +8,7 @@ include(FetchContent)
 FetchContent_Declare(
     graphbuilder
     GIT_REPOSITORY https://github.com/frozenbubble/graphbuilder.git
-    GIT_TAG 0.0.1
+    GIT_TAG 0.0.2
 )
 
 FetchContent_MakeAvailable(graphbuilder)
